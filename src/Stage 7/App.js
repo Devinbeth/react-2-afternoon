@@ -17,12 +17,12 @@ class App extends Component {
     this.refresh = this.refresh.bind(this);
   }
 
-  selectEmployee(){
-    
+  selectEmployee(employee){
+    this.selectEmployee({selectedEmployee: employee});
   }
 
   refresh(){
-
+    this.setState(this.state);
   }
 
   render() {
